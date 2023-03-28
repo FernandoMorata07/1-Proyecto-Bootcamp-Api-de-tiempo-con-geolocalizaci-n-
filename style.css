@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 18px;
+  opacity: 0.8;
+  background-color: transparent;
+  text-align: center;
+  margin: 1rem auto;
+  color: black;
+  order: 2;
+}
+
+button:hover,
+button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ffffff;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.container.morning {
+  background-image: url("/imagenes/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  order: 2;
+}
+
+.container.after {
+  background-image: url("/imagenes/mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  order: 2;
+}
+
+.container.night {
+  background-image: url("/imagenes/anochecer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  background-size: cover;
+
+  order: 2;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 2rem;
+  background-image: url(/imagenes/paisaje.jpg);
+  background-size: 100% 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+section {
+  margin-top: 2rem;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  -webkit-box-shadow: 19px 30px 84px 43px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 19px 30px 84px 43px rgba(0, 0, 0, 0.26);
+  box-shadow: 19px 30px 84px 43px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  padding: 1rem;
+
+  align-items: center;
+}
+article h2 {
+  padding: 1rem;
+  font-size: 24px;
+  order: 5;
+}
+
+article img {
+  width: 125px;
+  height: 125px;
+  order: 3;
+}
+
+article p {
+  font-size: 22px;
+  padding: 0.3rem;
+}
+
+article :nth-child(5) {
+  order: 3;
+}
+article :nth-child(6) {
+  order: 4;
+}
+
+h1 {
+  font-size: 44px;
+  padding: 3rem;
+  order: 0;
+}
+h3 {
+  font-size: 44px;
+  padding: 3rem;
+  order: 4;
+}
+
+#llueve {
+  color: black;
+}
+
+button.dark {
+  color: white;
+  border-color: white;
+  background-color: transparent;
+
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 40px 40px #ffffff00 inset, 0 0 0 0 #db3434;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+button.dark:hover,
+button:active {
+  background-color: rgb(255, 255, 255);
+  background-position: 0 0;
+  color: #e21313c6;
+  box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+h1 h3 {
+  color: rgb(16, 15, 15);
+  background-position: 0 0;
+  background: opacity 1em;
+}
+
+footer {
+  padding: 0.75rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  order: 2;
+}
+
+footer a {
+  color: white;
+  background-color: black;
+}
