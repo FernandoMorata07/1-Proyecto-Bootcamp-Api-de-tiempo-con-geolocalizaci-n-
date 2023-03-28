@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -102,13 +103,13 @@ article h2 {
 }
 
 article img {
-  width: 125px;
-  height: 125px;
+  width: 90px;
+  height: 90px;
   order: 3;
 }
 
 article p {
-  font-size: 22px;
+  font-size: 18px;
   padding: 0.3rem;
 }
 
@@ -120,13 +121,13 @@ article :nth-child(6) {
 }
 
 h1 {
-  font-size: 44px;
-  padding: 3rem;
+  font-size: 35px;
+  padding: 1rem;
   order: 0;
 }
 h3 {
-  font-size: 44px;
-  padding: 3rem;
+  font-size: 35px;
+  padding: 1rem;
   order: 4;
 }
 
