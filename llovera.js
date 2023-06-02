@@ -116,7 +116,7 @@ button.addEventListener("click", () => {
                 icono.src = "/animated/cloudy.svg";
                 break;
               case "Cubierto con lluvia":
-                 case "Cubierto con probabilidad de lluvias"
+              case "Cubierto con probabilidad de lluvias":
               case "Parcialmente nuboso con lluvias":
                 icono.src = "/animated/rainy-5.svg";
                 break;
