@@ -66,27 +66,7 @@ button.addEventListener("click", () => {
           console.log(data);
           lloverHoy.textContent = `El tiempo en su localidad, usted se encuentra en 📍 (${data.locality.name})`;
 
-          // for (let y = 1; y <= 8; y++) {
-          //   const siLLueve = data.hour_hour[`hour${y}`].text;
-          //   // console.log(siLLueve);
-          //   if (
-          //     siLLueve === "Cubierto con lluvia" ||
-          //     siLLueve === "Muy nuboso con lluvias" ||
-          //     siLLueve === "Cubierto con lluvias" ||
-          //     siLLueve === "Parcilmente nuboso con lluvias" ||
-          //     siLLueve === "Parcilamente nuboso con lluvia"
-          //   ) {
-          //     const h3 = document.createElement("h3");
-          //     h3.textContent = "En las próximas 8h lloverá";
-          //     main.append(h3);
-          //     break;
-          //   }
-          //   if (y >= 8) {
-          //     const h3 = document.createElement("h3");
-          //     h3.textContent = "En las próximas 8h no lloverá";
-          //     main.append(h3);
-          //   }
-          // }
+      
 
           for (let y = 1; y <= 8; y++) {
             const siLLueve = data.hour_hour[`hour${y}`].text;
@@ -136,6 +116,7 @@ button.addEventListener("click", () => {
                 icono.src = "/animated/cloudy.svg";
                 break;
               case "Cubierto con lluvia":
+                 case "Cubierto con probabilidad de lluvias"
               case "Parcialmente nuboso con lluvias":
                 icono.src = "/animated/rainy-5.svg";
                 break;
